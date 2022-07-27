@@ -1,0 +1,6 @@
+.hello {
+  color: red;
+  font-size: 3rem;
+  background: url('./icon.png');
+  background-repeat: no-repeat;
+}
