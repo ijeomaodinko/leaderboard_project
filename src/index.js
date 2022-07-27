@@ -1,22 +1,47 @@
-import _ from 'lodash';
+// import _ from 'lodash';
 import './style.css';
-import Icon from './icon.png';
 
- function component() {
-   const element = document.createElement('div');
+// import './style.css';
 
-  // Lodash, now imported by this script
-  //  element.innerHTML = _.join(['Hello123', 'webpack'], ' ');
-  //  element.classList.add('hello');
+const scoreBoard = [
+  {
+    name: 'Name: ',
+    score: 100,
+  },
+  {
+    name: 'Name:',
+    score: 20,
+  },
+  {
+    name: 'Name:',
+    score: 50,
+  },
+  {
+    name: 'Name:',
+    score: 78,
+  },
+  {
+    name: 'Name:',
+    score: 125,
+  },
+  {
+    name: 'Name:',
+    score: 77,
+  },
+  {
+    name: 'Name:',
+    score: 42,
+  },
+];
+const listItems = document.querySelector('.list');
 
-   // Add the image to our existing div.
-  const myIcon = new Image();
-  myIcon.src = Icon;
+function displayItems(arr) {
+  for (let i = 0; i < arr.length; i += 1) {
+    const divItem = document.createElement('div');
+    divItem.className = 'score-collection';
+    divItem.innerHTML = `<p class="pview">${arr[i].name} <span class="pviewScore">${arr[i].score}</span><p>`;
+    listItems.appendChild(divItem);
+  }
+}
 
-  element.appendChild(myIcon);
-
-
-   return element;
- }
-
- document.body.appendChild(component());
+displayItems(scoreBoard);

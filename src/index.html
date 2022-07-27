@@ -4,11 +4,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wbpack Exercise</title>
+  <title>leaderboard</title>
 </head>
 <body>
-  <h1>Hello Microverse!</h1>
-  <p>Setup local dev server
-Finally, it's time to improve your developer experience. When working on the project you will not want to run the build command from the terminal every time you make a change in the code. Therefore go ahead and install a webpack dev server, which will watch your source files, generate compiled distribution files and even refresh the browser every time you save changes in the source code.</p>
+  <section class="sectionLeaderboard">
+    <h1>Leaderboard</h1>
+    <div class="sectiondiv">
+        <div class="div1" id="div1">
+            <div class="div_p">
+                <p class="title_score">Recent scores </p> <button class="btn-refresh">Refresh</button></div>
+                <div class="list" id="list"> </div>
+            </div>
+            <div class="div2" id="div2">
+                <h2>Add your score</h2>
+                <input type="text" id="fname" class="fname" placeholder="Add your name"><br><br>
+                <input type="number" id="score" class="id" placeholder="Add your score"   ><br><br>
+                <button type="submit" id="btn-submit" class="btn-submit">Submit</button> 
+            </div>
+        </div>
+</section>
 </body>
 </html>
