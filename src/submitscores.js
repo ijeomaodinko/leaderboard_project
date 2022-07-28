@@ -1,3 +1,4 @@
+// disable eslint.
 import renderScores from './refreshScores.js';
 
 // to send data to the api

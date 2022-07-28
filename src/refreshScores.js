@@ -1,4 +1,5 @@
-import addScore from './index.js';
+// disable eslint
+import addScore from './addScores.js';
 
 // to get data from the api
 const renderScores = () => {

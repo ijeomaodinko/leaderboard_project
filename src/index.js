@@ -1,4 +1,4 @@
-//disable eslint.
+// disable eslint.
 // // import _ from 'lodash';
 import './style.css';
 
@@ -64,14 +64,3 @@ submitData.addEventListener('click', () => {
   const score = document.querySelector('.score').value;
   submit(user, score);
 });
-
-// to add items to the board
-const addScore = (name, score, id) => {
-  const scoresItem = document.getElementById('scoreRender');
-  const divItem = document.createElement('div');
-  divItem.classList.add('score-collection');
-  divItem.className = ('score-collection');
-  divItem.innerHTML = `<p class="pview">${name} <span class="pviewScore">${score}</span><p>`;
-  scoresItem.appendChild(divItem);
-};
-export default addScore;
