@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# To Do List
-This project contains codes that enables users add their activities and be able to remove once it is completed.
+# Leaderboard project
+This project contains codes that enables users get and add data to the API.
 
 ## Built With
 
@@ -15,7 +15,7 @@ This project contains codes that enables users add their activities and be able 
 
 
 ## Getting Started
-Open your console. Type the following "git clone https://github.com/ijeomaodinko/todo-list-project.git" if you are using HTTPS or "git clone git@github.com:ijeomaodinko/todo-list-project.git" if you are using a SSH key. Press ENTER to create your local clone. After creating it, you can open the "index.html" file in your browser.
+Open your console. Type the following "git clone https://github.com/ijeomaodinko/leaderboard_project.git" if you are using HTTPS or "git clone git@github.com:ijeomaodinko/leaderboard_project.git" if you are using a SSH key. Press ENTER to create your local clone. After creating it, you can open the "index.html" file in your browser.
 
 To get a local copy up and running follow these simple example steps.
 
