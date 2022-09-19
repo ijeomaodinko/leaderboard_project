@@ -1,0 +1,99 @@
+* {
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sectionLeaderboard {
+  width: 60%;
+  border: 3px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  border-radius: 1rem;
+  background-color: #dd627d;
+}
+
+.div_p {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.btn-refresh {
+  float: right;
+}
+
+h1 {
+  /* font-size: 2rem; */
+  font-family: sans-serif;
+  font-weight: 700;
+  margin-left: 15%;
+  margin-top: 2rem;
+}
+
+.title_score {
+  font-size: 24px;
+}
+
+input {
+  height: 2rem;
+}
+
+.btn-submit {
+  float: right;
+  margin-bottom: 0.5rem;
+}
+
+.pview {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 0.5rem;
+}
+
+.pviewScore {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: right;
+  justify-content: end;
+}
+
+.sectiondiv {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scoreRender {
+  border: solid black;
+  width: 130%;
+  height: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  background-color: #f588e3;
+}
+
+.score-collection {
+  padding-top: 0.9rem;
+  height: 2rem;
+}
+
+.score-collection:nth-child(even) {
+  background-color: rgb(245, 240, 240);
+}
+
+.div2 {
+  margin-top: 2rem;
+  margin-left: 0;
+  background-color: #c243af;
+  border-radius: 0.5rem;
+}
+
+.div1 {
+  margin-top: 2rem;
+}
