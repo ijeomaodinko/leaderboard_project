@@ -9,6 +9,8 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 4rem;
+  border-radius: 1rem;
+  background-color: #dd627d;
 }
 
 .div_p {
@@ -35,7 +37,6 @@ h1 {
 }
 
 input {
-  width: 100%;
   height: 2rem;
 }
 
@@ -67,12 +68,14 @@ input {
   margin-right: auto;
 }
 
-.list {
+.scoreRender {
   border: solid black;
   width: 130%;
   height: auto;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
+  border-radius: 1rem;
+  background-color: #f588e3;
 }
 
 .score-collection {
@@ -87,6 +90,8 @@ input {
 .div2 {
   margin-top: 2rem;
   margin-left: 0;
+  background-color: #c243af;
+  border-radius: 0.5rem;
 }
 
 .div1 {
