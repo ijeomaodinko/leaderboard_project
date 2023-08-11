@@ -1,10 +1,11 @@
-// to add items to the board
-const addScore = (name, score) => {
+// Define the addScore function
+function addScore(user, score, id) {
+  // Implementation of adding score to the DOM
   const scoresItem = document.getElementById('scoreRender');
-  const divItem = document.createElement('div');
-  divItem.classList.add('score-collection');
-  divItem.className = ('score-collection');
-  divItem.innerHTML = `<p class="pview">${name} <span class="pviewScore">${score}</span><p>`;
-  scoresItem.appendChild(divItem);
-};
+  const scoreElement = document.createElement('div');
+  scoreElement.className = ('score-collection');
+  scoreElement.innerHTML = `<p class="pview">${user} <span class="pviewScore"> ${score}</span><p>`;
+  scoresItem.appendChild(scoreElement);
+}
+
 export default addScore;

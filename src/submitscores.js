@@ -1,31 +1,31 @@
-// disable eslint.
 import renderScores from './refreshScores.js';
 
-// to send data to the api
-const submit = (user, score) => {
+// Define the submit function
+async function submit(user, score) {
   if (user || score !== '') {
-    const sentToApi = async () => {
-      const request = await fetch(
+    // Define the sentToApi function
+    async function sentToApi() {
+      const response = await fetch(
         'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/zl4d7ivkemottvg2fudz/scores/',
         {
           method: 'POST',
           body: JSON.stringify({
-            user: `${user}`,
-            score,
+            user: user,
+            score: score,
           }),
           headers: {
             'Content-type': 'application/json; charset=UTF-8',
           },
-        },
+        }
       );
-      return request.status;
-    };
-    sentToApi()
-      .then((res) => res)
-      .then(() => {
-        renderScores();
-      });
+      return response.status;
+    }
+
+    // Call the sentToApi function
+    const res = await sentToApi();
+    renderScores();
+    return res;
   }
-};
+}
 
 export default submit;
